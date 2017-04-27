@@ -1,4 +1,4 @@
 # BookManagement
-BookManagementは図書の貸し出し管理システムです。
-jsp/servletを用いて実装しました。
-MVCでディレクトリを分けています。
+BookManagementは図書の貸し出し管理システムです.    
+Javaのjsp/servletを用いて実装しました.  
+サーブレットコンテナとしてtomcat、データベースにMySQLを使用しています.    
