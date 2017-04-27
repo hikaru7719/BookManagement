@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd"
+	version="2.4">
+
+	  <filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>utilities.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/jsp/*</url-pattern>
+	</filter-mapping>
+
+
+ <filter>
+		<filter-name>ManagerFilter</filter-name>
+		<filter-class>utilities.ManagerFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ManagerFilter</filter-name>
+		<url-pattern>/jsp/manager_top.jsp</url-pattern>
+		<url-pattern>/jsp/edit.jsp</url-pattern>
+		<url-pattern>/jsp/lend_info.jsp</url-pattern>
+		<url-pattern>/jsp/Regist.jsp</url-pattern>
+		<url-pattern>/jsp/lend_info.jsp</url-pattern>
+		<url-pattern>/jsp/EditRemoveServlet.jsp</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/jsp2/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>FilterErrorServlet</servlet-name>
+		<servlet-class>servlet.FilterErrorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FilterErrorServlet</servlet-name>
+		<url-pattern>/jsp2/FilterErrorServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/jsp/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>GetBookServlet</servlet-name>
+		<servlet-class>servlet.GetBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetBookServlet</servlet-name>
+		<url-pattern>/jsp/GetBookServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetOneBookServlet</servlet-name>
+		<servlet-class>servlet.GetOneBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetOneBookServlet</servlet-name>
+		<url-pattern>/jsp/GetOneBookServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LendServlet</servlet-name>
+		<servlet-class>servlet.LendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LendServlet</servlet-name>
+		<url-pattern>/jsp/LendServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LendInfoServlet</servlet-name>
+		<servlet-class>servlet.LendInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LendInfoServlet</servlet-name>
+		<url-pattern>/jsp/LendInfoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReturnServlet</servlet-name>
+		<servlet-class>servlet.ReturnServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReturnServlet</servlet-name>
+		<url-pattern>/jsp/ReturnServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegistServlet</servlet-name>
+		<servlet-class>servlet.RegistServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistServlet</servlet-name>
+		<url-pattern>/jsp/RegistServlet</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>servlet.SearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/jsp/SearchServlet</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>ReserveServlet</servlet-name>
+		<servlet-class>servlet.ReserveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReserveServlet</servlet-name>
+		<url-pattern>/jsp/ReserveServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EditServlet</servlet-name>
+		<servlet-class>servlet.EditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditServlet</servlet-name>
+		<url-pattern>/jsp/EditServlet</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>EditRemoveServlet</servlet-name>
+		<servlet-class>servlet.EditRemoveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditRemoveServlet</servlet-name>
+		<url-pattern>/jsp/EditRemoveServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LendReserveServlet</servlet-name>
+		<servlet-class>servlet.LendReserveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LendReserveServlet</servlet-name>
+		<url-pattern>/jsp/LendReserveServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+</web-app>
